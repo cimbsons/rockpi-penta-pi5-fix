@@ -39,8 +39,8 @@ echo "  Backups saved as fan.py.bak and misc.py.bak"
 # Copy patched files
 echo "[3/4] Applying patches..."
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cp "$SCRIPT_DIR/patches/fan.py" /usr/bin/rockpi-penta/fan.py
-cp "$SCRIPT_DIR/patches/misc.py" /usr/bin/rockpi-penta/misc.py
+cp "$SCRIPT_DIR/rockpi-penta-pi5-fix/fan.py" /usr/bin/rockpi-penta/fan.py
+cp "$SCRIPT_DIR/rockpi-penta-pi5-fix/misc.py" /usr/bin/rockpi-penta/misc.py
 
 # Copy recommended config (only if user hasn't already customised it)
 if [ ! -f /etc/rockpi-penta.conf ]; then
